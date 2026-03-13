@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>개인정보 처리방침 - SajuAI</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.8;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: #fafafa;
+        }
+        h1 { font-size: 24px; margin-bottom: 8px; color: #111; }
+        h2 { font-size: 18px; margin-top: 32px; margin-bottom: 12px; color: #222; }
+        p, li { font-size: 15px; margin-bottom: 8px; }
+        ul { padding-left: 20px; margin-bottom: 16px; }
+        .date { color: #888; font-size: 14px; margin-bottom: 32px; }
+        .section {
+            background: #fff;
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 16px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+        }
+        .lang-toggle { text-align: right; margin-bottom: 20px; }
+        .lang-toggle a { color: #C9A227; text-decoration: none; font-size: 14px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <div class="lang-toggle"><a onclick="toggleLang()">English</a></div>
+    <div id="ko">
+        <h1>개인정보 처리방침</h1>
+        <p class="date">시행일: 2026년 3월 13일</p>
+        <div class="section">
+            <h2>1. 개요</h2>
+            <p>SajuAI(이하 "앱")는 사용자의 개인정보를 소중히 여기며, 「개인정보 보호법」 등 관련 법령을 준수합니다. 본 개인정보 처리방침은 앱이 어떤 정보를 수집하고 어떻게 사용하는지 안내합니다.</p>
+        </div>
+        <div class="section">
+            <h2>2. 수집하는 정보</h2>
+            <p>본 앱은 사주 분석 서비스 제공을 위해 다음 정보를 수집합니다:</p>
+            <ul>
+                <li><strong>생년월일 및 출생시간:</strong> 사주팔자 분석에 필요한 기본 정보</li>
+                <li><strong>성별:</strong> 사주 분석의 정확성을 위해 사용</li>
+                <li><strong>이름:</strong> 서비스 내 표시 및 작명 기능에 사용</li>
+                <li><strong>출생지(선택):</strong> 보다 정밀한 사주 분석에 활용</li>
+            </ul>
+            <p>위 정보는 사용자의 기기에만 저장되며, 외부 서버로 전송되지 않습니다. 단, AI 분석 요청 시 OpenAI API로 생년월일시 정보가 전송되며, 이는 분석 결과 생성 후 즉시 폐기됩니다.</p>
+        </div>
+        <div class="section">
+            <h2>3. AI 서비스</h2>
+            <p>본 앱은 OpenAI의 GPT 모델을 활용하여 사주 분석 및 운세 서비스를 제공합니다.</p>
+            <ul>
+                <li>API 요청 시 사주 분석에 필요한 최소한의 정보(생년월일시, 성별)만 전송됩니다.</li>
+                <li>OpenAI는 API를 통해 전송된 데이터를 모델 학습에 사용하지 않습니다.</li>
+                <li>자세한 내용은 <a href="https://openai.com/policies/privacy-policy" target="_blank">OpenAI 개인정보 처리방침</a>을 참조하세요.</li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2>4. 데이터 저장</h2>
+            <p>앱의 모든 사용자 데이터(프로필, 분석 결과, 대화 내역, 티켓 잔액 등)는 기기의 로컬 저장소에만 저장되며, 별도의 서버에 저장되지 않습니다. 앱 삭제 시 모든 데이터가 함께 삭제됩니다.</p>
+        </div>
+        <div class="section">
+            <h2>5. 제3자 제공</h2>
+            <p>본 앱은 AI 분석 서비스(OpenAI)를 제외하고 어떠한 제3자에게도 사용자 정보를 제공하지 않습니다.</p>
+        </div>
+        <div class="section">
+            <h2>6. 카메라 및 사진 접근</h2>
+            <p>관상/손금 분석 기능 이용 시 카메라 또는 사진 라이브러리 접근 권한을 요청할 수 있습니다. 촬영/선택된 사진은 AI 분석 요청에만 사용되며, 기기 외부에 저장되지 않습니다.</p>
+        </div>
+        <div class="section">
+            <h2>7. 아동 개인정보</h2>
+            <p>본 앱은 만 14세 미만의 아동을 대상으로 하지 않으며, 의도적으로 아동의 개인정보를 수집하지 않습니다.</p>
+        </div>
+        <div class="section">
+            <h2>8. 변경 사항</h2>
+            <p>본 개인정보 처리방침은 필요에 따라 변경될 수 있으며, 변경 시 앱 내 또는 이 페이지를 통해 공지합니다.</p>
+        </div>
+        <div class="section">
+            <h2>9. 문의</h2>
+            <p>개인정보 처리방침에 관한 문의사항은 아래로 연락해 주세요.</p>
+            <p>이메일: tezparklab@gmail.com</p>
+        </div>
+    </div>
+    <div id="en" style="display:none;">
+        <h1>Privacy Policy</h1>
+        <p class="date">Effective Date: March 13, 2026</p>
+        <div class="section">
+            <h2>1. Overview</h2>
+            <p>SajuAI ("the App") values your privacy and complies with applicable privacy laws. This Privacy Policy explains what information the App collects and how it is used.</p>
+        </div>
+        <div class="section">
+            <h2>2. Information We Collect</h2>
+            <p>The App collects the following information for fortune-telling analysis:</p>
+            <ul>
+                <li><strong>Date and time of birth:</strong> Essential for Saju (Four Pillars) analysis</li>
+                <li><strong>Gender:</strong> Used for analysis accuracy</li>
+                <li><strong>Name:</strong> For display and naming services</li>
+                <li><strong>Birthplace (optional):</strong> For more precise analysis</li>
+            </ul>
+            <p>All information is stored only on your device. When requesting AI analysis, birth date/time data is sent to the OpenAI API and discarded immediately after generating results.</p>
+        </div>
+        <div class="section">
+            <h2>3. AI Services</h2>
+            <p>The App uses OpenAI's GPT models for fortune analysis.</p>
+            <ul>
+                <li>Only minimal information (birth date/time, gender) is transmitted for API requests.</li>
+                <li>OpenAI does not use API data for model training.</li>
+                <li>See <a href="https://openai.com/policies/privacy-policy" target="_blank">OpenAI Privacy Policy</a> for details.</li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2>4. Data Storage</h2>
+            <p>All user data (profiles, analysis results, chat history, ticket balance) is stored only in local device storage. Uninstalling the app deletes all data.</p>
+        </div>
+        <div class="section">
+            <h2>5. Third-Party Sharing</h2>
+            <p>We do not share user information with any third parties except through the AI analysis service (OpenAI).</p>
+        </div>
+        <div class="section">
+            <h2>6. Camera and Photo Access</h2>
+            <p>The face/palm reading feature may request camera or photo library access. Photos are used only for AI analysis and are not stored externally.</p>
+        </div>
+        <div class="section">
+            <h2>7. Children's Privacy</h2>
+            <p>This App is not directed at children under 14, and we do not knowingly collect personal information from children.</p>
+        </div>
+        <div class="section">
+            <h2>8. Changes</h2>
+            <p>This Privacy Policy may be updated as needed. Changes will be communicated through the App or this page.</p>
+        </div>
+        <div class="section">
+            <h2>9. Contact</h2>
+            <p>For questions about this Privacy Policy, please contact:</p>
+            <p>Email: tezparklab@gmail.com</p>
+        </div>
+    </div>
+    <script>
+        function toggleLang() {
+            const ko = document.getElementById('ko');
+            const en = document.getElementById('en');
+            const toggle = document.querySelector('.lang-toggle a');
+            if (ko.style.display === 'none') {
+                ko.style.display = 'block'; en.style.display = 'none'; toggle.textContent = 'English';
+            } else {
+                ko.style.display = 'none'; en.style.display = 'block'; toggle.textContent = '한국어';
+            }
+        }
+    </script>
+</body>
+</html>
