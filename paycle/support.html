@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>고객 지원 - Paycle</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.8;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: #fafafa;
+        }
+        h1 { font-size: 24px; margin-bottom: 8px; color: #111; }
+        h2 { font-size: 18px; margin-top: 32px; margin-bottom: 12px; color: #222; }
+        h3 { font-size: 16px; margin-top: 16px; margin-bottom: 8px; color: #333; }
+        p, li { font-size: 15px; margin-bottom: 8px; }
+        ul { padding-left: 20px; margin-bottom: 16px; }
+        a { color: #A78BFA; text-decoration: none; }
+        .subtitle { color: #888; font-size: 14px; margin-bottom: 32px; }
+        .section {
+            background: #fff;
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 16px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+        }
+        .contact-btn {
+            display: inline-block;
+            background: #A78BFA;
+            color: #fff;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-size: 15px;
+            font-weight: 600;
+            margin-top: 8px;
+        }
+        .lang-toggle { text-align: right; margin-bottom: 20px; }
+        .lang-toggle a { color: #A78BFA; text-decoration: none; font-size: 14px; cursor: pointer; margin-left: 12px; }
+    </style>
+</head>
+<body>
+    <div class="lang-toggle">
+        <a onclick="showLang('ko')">한국어</a>
+        <a onclick="showLang('en')">English</a>
+        <a onclick="showLang('ja')">日本語</a>
+    </div>
+
+    <!-- Korean -->
+    <div id="ko">
+        <h1>Paycle 고객 지원</h1>
+        <p class="subtitle">구독 관리를 도와드립니다</p>
+
+        <div class="section">
+            <h2>자주 묻는 질문</h2>
+
+            <h3>Q. 데이터는 어디에 저장되나요?</h3>
+            <p>모든 데이터는 사용자의 기기에만 저장됩니다. 별도의 서버에 전송되지 않으며, 앱 삭제 시 함께 삭제됩니다.</p>
+
+            <h3>Q. 알림이 오지 않아요.</h3>
+            <p>설정 > 결제 알림이 켜져 있는지 확인해 주세요. 또한 기기의 시스템 설정에서 Paycle의 알림 권한이 허용되어 있어야 합니다.</p>
+
+            <h3>Q. 구독을 일시정지하면 어떻게 되나요?</h3>
+            <p>일시정지된 구독은 월간/연간 비용 계산에서 제외되며, 알림도 발송되지 않습니다. 언제든 재개할 수 있습니다.</p>
+
+            <h3>Q. 다른 기기로 데이터를 옮길 수 있나요?</h3>
+            <p>현재 버전에서는 기기 간 데이터 이전 기능을 지원하지 않습니다. 향후 업데이트에서 지원 예정입니다.</p>
+        </div>
+
+        <div class="section">
+            <h2>문의하기</h2>
+            <p>버그 제보, 기능 제안, 기타 문의사항이 있으시면 이메일로 연락해 주세요.</p>
+            <a href="mailto:tezparklab@gmail.com" class="contact-btn">tezparklab@gmail.com</a>
+        </div>
+
+        <div class="section">
+            <h2>관련 링크</h2>
+            <ul>
+                <li><a href="privacy.html">개인정보 처리방침</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- English -->
+    <div id="en" style="display:none;">
+        <h1>Paycle Support</h1>
+        <p class="subtitle">We're here to help with your subscription management</p>
+
+        <div class="section">
+            <h2>Frequently Asked Questions</h2>
+
+            <h3>Q. Where is my data stored?</h3>
+            <p>All data is stored only on your device. Nothing is transmitted to external servers. Uninstalling the app deletes all data.</p>
+
+            <h3>Q. I'm not receiving notifications.</h3>
+            <p>Check that Payment Reminders are enabled in Settings. Also ensure Paycle has notification permission in your device's system settings.</p>
+
+            <h3>Q. What happens when I pause a subscription?</h3>
+            <p>Paused subscriptions are excluded from monthly/yearly cost calculations and no reminders will be sent. You can resume anytime.</p>
+
+            <h3>Q. Can I transfer data to another device?</h3>
+            <p>Data transfer between devices is not supported in the current version. This feature is planned for a future update.</p>
+        </div>
+
+        <div class="section">
+            <h2>Contact Us</h2>
+            <p>For bug reports, feature requests, or other inquiries, please email us.</p>
+            <a href="mailto:tezparklab@gmail.com" class="contact-btn">tezparklab@gmail.com</a>
+        </div>
+
+        <div class="section">
+            <h2>Related Links</h2>
+            <ul>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Japanese -->
+    <div id="ja" style="display:none;">
+        <h1>Paycle サポート</h1>
+        <p class="subtitle">サブスク管理をお手伝いします</p>
+
+        <div class="section">
+            <h2>よくある質問</h2>
+
+            <h3>Q. データはどこに保存されますか？</h3>
+            <p>すべてのデータはお使いのデバイスにのみ保存されます。外部サーバーに送信されることはなく、アプリを削除すると一緒に削除されます。</p>
+
+            <h3>Q. 通知が届きません。</h3>
+            <p>設定 > 支払いリマインダーがオンになっているか確認してください。また、デバイスのシステム設定でPaycleの通知権限が許可されている必要があります。</p>
+
+            <h3>Q. サブスクを一時停止するとどうなりますか？</h3>
+            <p>一時停止されたサブスクは月額/年額の費用計算から除外され、リマインダーも送信されません。いつでも再開できます。</p>
+
+            <h3>Q. 別のデバイスにデータを移行できますか？</h3>
+            <p>現在のバージョンではデバイス間のデータ移行機能には対応していません。今後のアップデートで対応予定です。</p>
+        </div>
+
+        <div class="section">
+            <h2>お問い合わせ</h2>
+            <p>バグ報告、機能リクエスト、その他のお問い合わせはメールでご連絡ください。</p>
+            <a href="mailto:tezparklab@gmail.com" class="contact-btn">tezparklab@gmail.com</a>
+        </div>
+
+        <div class="section">
+            <h2>関連リンク</h2>
+            <ul>
+                <li><a href="privacy.html">プライバシーポリシー</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        function showLang(lang) {
+            document.getElementById('ko').style.display = lang === 'ko' ? 'block' : 'none';
+            document.getElementById('en').style.display = lang === 'en' ? 'block' : 'none';
+            document.getElementById('ja').style.display = lang === 'ja' ? 'block' : 'none';
+        }
+    </script>
+</body>
+</html>
