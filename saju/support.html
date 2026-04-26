@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>고객 지원 - 사주문(SajuAI)</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.8;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: #fafafa;
+        }
+        h1 { font-size: 24px; margin-bottom: 8px; color: #111; }
+        h2 { font-size: 18px; margin-top: 32px; margin-bottom: 12px; color: #222; }
+        p, li { font-size: 15px; margin-bottom: 8px; }
+        ul { padding-left: 20px; margin-bottom: 16px; }
+        .date { color: #888; font-size: 14px; margin-bottom: 32px; }
+        .section {
+            background: #fff;
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 16px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+        }
+        .email-link { color: #C9A227; text-decoration: none; font-weight: 600; }
+        .email-link:hover { text-decoration: underline; }
+        .lang-toggle { text-align: right; margin-bottom: 20px; }
+        .lang-toggle a { color: #C9A227; text-decoration: none; font-size: 14px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <div class="lang-toggle"><a onclick="toggleLang()">English</a></div>
+    <div id="ko">
+        <h1>고객 지원</h1>
+        <p class="date">사주문(SajuAI)</p>
+        <div class="section">
+            <h2>문의하기</h2>
+            <p>앱 이용 중 문제가 발생하거나 궁금한 점이 있으시면 아래 이메일로 연락해 주세요.</p>
+            <p>이메일: <a class="email-link" href="mailto:tezparklab@gmail.com">tezparklab@gmail.com</a></p>
+            <p>평일 기준 1~2일 이내에 답변드리겠습니다.</p>
+        </div>
+        <div class="section">
+            <h2>자주 묻는 질문</h2>
+            <ul>
+                <li><strong>티켓은 어떻게 충전하나요?</strong><br>마이페이지 또는 홈 화면의 티켓 아이콘을 눌러 인앱 결제로 충전할 수 있습니다.</li>
+                <li><strong>프로필은 어떻게 등록하나요?</strong><br>마이페이지에서 "프로필 관리"를 눌러 생년월일, 태어난 시, 성별 등을 입력하세요.</li>
+                <li><strong>데이터가 외부로 전송되나요?</strong><br>사주 분석 요청 시 최소한의 정보만 AI 서비스로 전송되며, 분석 후 즉시 폐기됩니다. 자세한 내용은 <a href="privacy.html">개인정보 처리방침</a>을 참조하세요.</li>
+                <li><strong>계정을 삭제하고 싶어요.</strong><br>마이페이지 하단의 "계정 삭제" 버튼을 통해 모든 데이터를 삭제할 수 있습니다.</li>
+                <li><strong>결제 환불은 어떻게 하나요?</strong><br>App Store 또는 Google Play의 결제 내역에서 환불을 요청하시거나, 이메일로 문의해 주세요.</li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2>관련 링크</h2>
+            <ul>
+                <li><a href="privacy.html">개인정보 처리방침</a></li>
+                <li><a href="terms.html">이용약관</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="en" style="display:none;">
+        <h1>Customer Support</h1>
+        <p class="date">SajuAI</p>
+        <div class="section">
+            <h2>Contact Us</h2>
+            <p>If you encounter any issues or have questions while using the app, please contact us via email.</p>
+            <p>Email: <a class="email-link" href="mailto:tezparklab@gmail.com">tezparklab@gmail.com</a></p>
+            <p>We will respond within 1-2 business days.</p>
+        </div>
+        <div class="section">
+            <h2>FAQ</h2>
+            <ul>
+                <li><strong>How do I purchase tickets?</strong><br>Tap the ticket icon on the home screen or go to My Page to purchase tickets via in-app purchase.</li>
+                <li><strong>How do I register my profile?</strong><br>Go to My Page and tap "Profile Management" to enter your birth date, birth time, and gender.</li>
+                <li><strong>Is my data sent externally?</strong><br>Only minimal information is sent to the AI service during analysis and is discarded immediately after. See our <a href="privacy.html">Privacy Policy</a> for details.</li>
+                <li><strong>How do I delete my account?</strong><br>Use the "Delete Account" button at the bottom of My Page to remove all your data.</li>
+                <li><strong>How do I request a refund?</strong><br>Request a refund through the App Store or Google Play purchase history, or contact us via email.</li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2>Related Links</h2>
+            <ul>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="terms.html">Terms of Service</a></li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        function toggleLang() {
+            const ko = document.getElementById('ko');
+            const en = document.getElementById('en');
+            const toggle = document.querySelector('.lang-toggle a');
+            if (ko.style.display === 'none') {
+                ko.style.display = 'block'; en.style.display = 'none'; toggle.textContent = 'English';
+            } else {
+                ko.style.display = 'none'; en.style.display = 'block'; toggle.textContent = '한국어';
+            }
+        }
+    </script>
+</body>
+</html>
